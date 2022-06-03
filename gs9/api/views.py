@@ -17,4 +17,4 @@ def hello_world(request):
         return Response({'msg':'This is GET request'})
     if request.method == "POST":
         print(request.data)
-        return Response({'msg':'This is POST request'})
+        return Response({'msg':'This is POST request', 'data':request.data})
